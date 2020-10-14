@@ -1,0 +1,29 @@
+#importando a biblioteca
+from tkinter import *
+
+#window é o o nome da minha variável que nesse caso é janela
+window = Tk()
+
+#criando o loop
+class Application():
+    def __init__(self):
+        self.window = window
+        self.tela()
+        window.mainloop()
+   #aqui eu defino tudo que vao estar na minha tela
+    def tela(self):
+        #aqui o titulo
+        self.window.title("Junin tk 1")
+        #aqui eu coloquei uma cor no fundo
+        self.window.configure(bg='lighttblue')
+        #define a o tamanho inicial da minha janela
+        self.window.geometry('850x655')
+        #mandei ele ser responsível
+        self.window.resizable(True, True)
+        #definindo o tamanho máximo da janela
+        self.window.maxsize(width=1600, height=900)
+        #aqui defino o tamanho minimo
+        self.window.minsize(width=650, height=450)
+
+#aqui eu mostro tudo o que fiz lá em cima
+Application()
